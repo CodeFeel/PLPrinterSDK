@@ -1,0 +1,6 @@
+framework module PLPrinterSDK {
+  umbrella header "PLPrinterSDK.h"
+
+  export *
+  module * { export * }
+}

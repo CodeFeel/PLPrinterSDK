@@ -107,6 +107,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSData *)setPrinterPaper:(Byte)type;
 
+/** 获取纸张类型 */
++ (NSData *)getPrinterPaperType;
+
 @end
 
 NS_ASSUME_NONNULL_END

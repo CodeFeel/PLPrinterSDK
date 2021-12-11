@@ -15,7 +15,7 @@ use_frameworks!
 target 'MyApp' do
   # your other pod
   # ...
-  pod 'PLPrinterSDK ','~> 0.1.0'
+  pod 'PLPrinterSDK ','~> 0.1.1'
 end
 ```
 
@@ -39,5 +39,13 @@ Privacy - Bluetooth Always Usage Description
 
 ```swift
 Privacy - Bluetooth Peripheral Usage Description
+```
+
+
+
+### Document
+
+```swift
+请查看Example的文档说明
 ```
 

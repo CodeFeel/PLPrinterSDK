@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/PLBitmapManager.h</key>
 		<data>
-		S5QrGLW81eID1MRdggQomZBR6dY=
+		kqXpqR3tK/78Uf9xPIOQ9pEiQyg=
 		</data>
 		<key>Headers/PLCmdMTGenerator.h</key>
 		<data>
-		+UFs3lvRbxwQiwxECxBewfLBMtE=
+		fwBS3RMl1iqzv+GWuwoaSsGvg2g=
 		</data>
 		<key>Headers/PLConnectInterface.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		O1hzPSRtJ7xAkgYiLri6D7WGbxk=
+		IHAYX1n02nCvLB9fiOpqemS+zw8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,22 +63,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S5QrGLW81eID1MRdggQomZBR6dY=
+			kqXpqR3tK/78Uf9xPIOQ9pEiQyg=
 			</data>
 			<key>hash2</key>
 			<data>
-			UL+9M0a/GSrEcprCuehiuhyFopHrtjvzV2pSbLCEtkk=
+			L/zoxmQyljNmulW6AMZtvsaRezpKWNwiBGa1+aIkySc=
 			</data>
 		</dict>
 		<key>Headers/PLCmdMTGenerator.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+UFs3lvRbxwQiwxECxBewfLBMtE=
+			fwBS3RMl1iqzv+GWuwoaSsGvg2g=
 			</data>
 			<key>hash2</key>
 			<data>
-			dtk3/WxlaslYyRs/c52uUGPa35+QESUN0w9W4W93F+U=
+			Hckvfjf4wn/zxxCbahyLeQGS9KtU2PmTRJMKxp1kxuE=
 			</data>
 		</dict>
 		<key>Headers/PLConnectInterface.h</key>

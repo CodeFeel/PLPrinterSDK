@@ -91,6 +91,13 @@ typedef NS_ENUM(NSInteger, PLBitmapMode) {
 + (NSData *)printableBinaryData:(UIImage *)image threshold:(Byte)threshold compress:(PLBitmapCompressMode)compress;
 
 
+/// 重绘打印图片
+/// @param image 原图
+/// @param destSize 目标大小 A4->2336x3288
+/// @param aotuRotate 是否自动旋转
++ (UIImage *)drawPrintImage:(UIImage *)image destSize:(CGSize)destSize aotuRotate:(BOOL)aotuRotate;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,0 +1,41 @@
+PODS:
+  - HMSegmentedControl (1.5.5)
+  - MJRefresh (3.2.0)
+  - Reusable (4.1.1):
+    - Reusable/Storyboard (= 4.1.1)
+    - Reusable/View (= 4.1.1)
+  - Reusable/Storyboard (4.1.1)
+  - Reusable/View (4.1.1)
+  - SnapKit (4.2.0)
+  - SVProgressHUD (2.2.5)
+  - Then (2.4.0)
+
+DEPENDENCIES:
+  - HMSegmentedControl
+  - MJRefresh
+  - Reusable
+  - SnapKit
+  - SVProgressHUD
+  - Then
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - HMSegmentedControl
+    - MJRefresh
+    - SnapKit
+    - SVProgressHUD
+    - Then
+  trunk:
+    - Reusable
+
+SPEC CHECKSUMS:
+  HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
+
+PODFILE CHECKSUM: 3d0180cb95d25d1adb75da2ede902ff801948940
+
+COCOAPODS: 1.9.3

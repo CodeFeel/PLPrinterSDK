@@ -14,18 +14,25 @@ FOUNDATION_EXPORT double PLPrinterSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char PLPrinterSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <PLPrinterSDK/PublicHeader.h>
+
 #import <PLPrinterSDK/PLDataDispatcher.h>
 #import <PLPrinterSDK/PLConnectInterface.h>
+#import <PLPrinterSDK/PLLanguageConfig.h>
 
 #import <PLPrinterSDK/PLResolverCentral.h>
 #import <PLPrinterSDK/PLMT800Resolver.h>
 
 #import <PLPrinterSDK/PLBitmapManager.h>
 
+#import <PLPrinterSDK/PLCmdPoooliGenerator.h>
 #import <PLPrinterSDK/PLCmdMTGenerator.h>
+#import <PLPrinterSDK/PLCmdBBJGenerator.h>
+#import <PLPrinterSDK/PLCmdUniGenerator.h>
+#import <PLPrinterSDK/PLCmdCPCLGenerator.h>
+#import <PLPrinterSDK/PLCmdESCGenerator.h>
+#import <PLPrinterSDK/PLCmdTSCGenerator.h>
+#import <PLPrinterSDK/PLCmdZPLGenerator.h>
 
 #import <PLPrinterSDK/PLEncode.h>
 #import <PLPrinterSDK/PLEnumList.h>
 
-#import <PLPrinterSDK/PLPDFConverter.h>
-#import <PLPrinterSDK/PLLog.h>

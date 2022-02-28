@@ -36,7 +36,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PLDataRouterBlock : NSObject
 
 @property (nonatomic, assign) NSInteger minDataLength;
-
 @property (nonatomic, copy) PLCommonResolveModel * _Nullable (^ handleBlock)(NSData *);
 
 @end

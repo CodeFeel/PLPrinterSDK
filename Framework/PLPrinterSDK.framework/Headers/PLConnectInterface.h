@@ -19,12 +19,13 @@ typedef NS_ENUM(NSInteger, PLConnectMode) {
 };
 
 typedef NS_ENUM(NSInteger, PLBluetoothState) {
+    PLBluetoothStateUnknown = 0,
     /// 未授权，请前往系统设置授权
-    PLBluetoothStateUnauthorized  = 0,
+    PLBluetoothStateUnauthorized  = 1,
     /// 蓝牙未开
-    PLBluetoothStatePoweredOff  = 1,
+    PLBluetoothStatePoweredOff  = 2,
     /// 正常
-    PLBluetoothStatePoweredOn  = 2,
+    PLBluetoothStatePoweredOn  = 3,
 };
 
 /// 连接错误类型
@@ -36,7 +37,9 @@ typedef NS_ENUM(NSUInteger,PLConnectError){
     PLConnectErrorUnknownDevice,
     PLConnectErrorSystemFailed,
     PLConnectErrorValidateFailed,
-    PLConnectErrorCodeCheckFailed
+    PLConnectErrorCodeCheckFailed,
+    PLConnectErrorSocketError,
+    PLConnectErrorSocketTimeout,
 };
 
 typedef void(^PLAccessoryPickerCompletion)(NSError *error);
@@ -44,13 +47,13 @@ typedef void(^PLAccessoryPickerCompletion)(NSError *error);
 #pragma mark - 打印机属性类
 @interface PLPrinterMessage : NSObject
 
-@property (nonatomic, copy) NSString        *name;  ///< 外设的唯一标识符
-@property (nonatomic, copy) NSString        *mac;   ///< mfi和ble的可能不一样
-@property (nonatomic, copy) NSString        *identifier; ///< 外设的唯一标识符
-@property (nonatomic, strong) NSNumber      *distance;  ///< 距离
-@property (nonatomic, strong) EAAccessory   *accessory; ///< mfi连接对象
-@property (nonatomic, strong) CBPeripheral  *peripheral; ///< ble连接对象
-@property (nonatomic, assign) PLConnectMode  mode;      ///< 连接类型
+@property (nonatomic, copy) NSString        *name;          ///< 外设的唯一标识符
+@property (nonatomic, copy) NSString        *mac;           ///< mfi和ble的可能不一样
+@property (nonatomic, copy) NSString        *identifier;    ///< 外设的唯一标识符
+@property (nonatomic, strong) NSNumber      *distance;      ///< 距离
+@property (nonatomic, strong) EAAccessory   *accessory;     ///< mfi连接对象
+@property (nonatomic, strong) CBPeripheral  *peripheral;    ///< ble连接对象
+@property (nonatomic, assign) PLConnectMode  mode;          ///< 连接类型
 
 @end
 
@@ -71,7 +74,7 @@ typedef void(^PLAccessoryPickerCompletion)(NSError *error);
 - (void)didConnectSuccess;
 
 /** 断开连接 */
-- (void)didDisconnect;
+- (void)didDisconnect:(BOOL)active;
 
 /** 监听系统设置有配件连接，注册mfi通知后才会回调 */
 - (void)observerAccessoryDidConnectedNotification:(PLPrinterMessage *)device;
@@ -102,9 +105,11 @@ typedef void(^PLAccessoryPickerCompletion)(NSError *error);
 
 /**
  * 连接打印机
- * @param printer 外设对象(请使用mfi搜索到的外设对象连接，ble只是快速搜索展示，无法用于连接)
+ * @param printer 外设对象
  */
 - (void)connectPrinter:(PLPrinterMessage *)printer;
+
+- (void)connectDeviceWithIdentifier:(NSString *)identifier;
 
 /** 断开打印机 */
 - (void)disconnect;

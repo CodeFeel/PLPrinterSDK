@@ -80,7 +80,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSMutableArray<PLMT800BitmapSlice *> *)sliceImageBitmap:(NSData *)data height:(uint16_t)height;
 
-
 /**
  * 图片分包数组(自定义算法)
  * @param data 算法处理后的图片数据，2336x3288
@@ -93,22 +92,7 @@ NS_ASSUME_NONNULL_BEGIN
                                                         compress:(PLBitmapCompressMode)compress
                                                          package:(BOOL)package;
 
-/**
- * 封装好的固件数据
- * @param data 固件数据
- */
-+ (NSData *)getFirmwareData:(NSData *)data;
 
-
-/**
- 设置纸张类型
-
- @param type 0~2: 0：连续纸 1：A4纸 2：黑标纸
- */
-+ (NSData *)setPrinterPaper:(Byte)type;
-
-/** 获取纸张类型 */
-+ (NSData *)getPrinterPaperType;
 
 @end
 

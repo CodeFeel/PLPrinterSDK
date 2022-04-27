@@ -110,27 +110,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- * 生成机器识别的高清数据
- * @param data 数据
- * @param imageWidth 图片实际宽度
- */
-+ (NSData *)appendGrayHDImageBitmap:(NSData *)data imageWidth:(NSInteger)imageWidth;
-
-/**
- * 生成机器识别的高清数据,256阶数据(自定义算法)
- * @param data 256阶图片数据(算法处理后的图片数据,图片高度不能超过5000)
- * @param imageWidth 图片实际宽度
- */
-+ (NSData *)customGrayImageWith256LevelData:(NSData *)data imageWidth:(NSInteger)imageWidth;
-
-/**
- * 生成机器识别的高清数据，16阶数据(自定义算法)
- * @param data 16阶图片数据(算法处理后的图片数据,图片高度不能超过5000)
- * @param imageWidth 图片实际宽度
- */
-+ (NSData *)customGrayImageWith16LevelData:(NSData *)data imageWith:(NSInteger)imageWidth;
-
-/**
  * 生成机器识别的(二值、抖动)数据(自定义算法)
  * @param data 算法处理后的图片数据
  * @param imageWidth 图片实际宽度

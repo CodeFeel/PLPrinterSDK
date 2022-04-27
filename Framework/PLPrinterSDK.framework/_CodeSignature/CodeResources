@@ -4,13 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/PLBarcodeEncodeVerify.h</key>
+		<data>
+		a1XVtggrhXUC8ukqdoQgZ29BLvE=
+		</data>
 		<key>Headers/PLBitmapManager.h</key>
 		<data>
-		sH+Hdy816dvVCb2Z44uBRHFD+nY=
-		</data>
-		<key>Headers/PLCmdBBJGenerator.h</key>
-		<data>
-		CJG2f7zOPmhg5WWByn9oWTWoPqc=
+		0/Wde7tDLZuuPNp6FTblyREphW8=
 		</data>
 		<key>Headers/PLCmdCPCLGenerator.h</key>
 		<data>
@@ -20,13 +20,9 @@
 		<data>
 		Zv+ZOWSrVh170dt05t62LYUkp3g=
 		</data>
-		<key>Headers/PLCmdMTGenerator.h</key>
-		<data>
-		S6UuLub7Q6IHieXzV4adzNXo3es=
-		</data>
 		<key>Headers/PLCmdPoooliGenerator.h</key>
 		<data>
-		qfDmf+u5vAvnLYDnY5S1Ul1+IuQ=
+		zZ++/jV3dznjaHIxhIpR4Dplj2c=
 		</data>
 		<key>Headers/PLCmdTSCGenerator.h</key>
 		<data>
@@ -42,11 +38,11 @@
 		</data>
 		<key>Headers/PLConnectInterface.h</key>
 		<data>
-		EIc67ebUUKFBsrC0q6ZYL47y4gc=
+		9rVMAWTr81MdVPf2HvEfmTYy+v0=
 		</data>
 		<key>Headers/PLDataDispatcher.h</key>
 		<data>
-		+bXzDT5F4cpk2HyFdmXjRRXHYy0=
+		JPAlymdpqB/qQ8GDFY3YfjcwrpY=
 		</data>
 		<key>Headers/PLEncode.h</key>
 		<data>
@@ -60,13 +56,9 @@
 		<data>
 		4RKR+Gn/T4aDaoloRJ5N1EXvssA=
 		</data>
-		<key>Headers/PLMT800Resolver.h</key>
-		<data>
-		TtFNs9zqyWrJwj5yKb51N30a6ws=
-		</data>
 		<key>Headers/PLPrinterSDK.h</key>
 		<data>
-		Tfp7XE/EOzrLr+ub181SmHrQF5I=
+		sMU2uoDN3J03Rtwna30nxHqzZS0=
 		</data>
 		<key>Headers/PLResolverCentral.h</key>
 		<data>
@@ -74,7 +66,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		i2dp4wZ3rNHEqMvkrtNrHsZ78vw=
+		RKY/ByXCP7/z0fYfrNfZW8Wa3M4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,26 +75,26 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/PLBarcodeEncodeVerify.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a1XVtggrhXUC8ukqdoQgZ29BLvE=
+			</data>
+			<key>hash2</key>
+			<data>
+			gLM9mLcPhbRuFFwtkE4559gKx32tW7iJIEqGoyJeNmI=
+			</data>
+		</dict>
 		<key>Headers/PLBitmapManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sH+Hdy816dvVCb2Z44uBRHFD+nY=
+			0/Wde7tDLZuuPNp6FTblyREphW8=
 			</data>
 			<key>hash2</key>
 			<data>
-			kFmyGH8/FHOQK1p9r5qjbVNdqBtn3rcL/cE+wbtuLi0=
-			</data>
-		</dict>
-		<key>Headers/PLCmdBBJGenerator.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CJG2f7zOPmhg5WWByn9oWTWoPqc=
-			</data>
-			<key>hash2</key>
-			<data>
-			Lsi+XzglMsWialHry0ANMFrJzuHg9Awc23vFKL7zUgs=
+			2ViYWt/Rwf+h9/MOfHcIFY0SFWVK7vWkkuPRclQaQm4=
 			</data>
 		</dict>
 		<key>Headers/PLCmdCPCLGenerator.h</key>
@@ -127,26 +119,15 @@
 			8WEe7wPrcDP//ygxIvVpwfjiVc4hvlO/M1qIzWRsJlg=
 			</data>
 		</dict>
-		<key>Headers/PLCmdMTGenerator.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			S6UuLub7Q6IHieXzV4adzNXo3es=
-			</data>
-			<key>hash2</key>
-			<data>
-			/RuD2khhvjhFTbyMwtOhTmvmojCUMd9lAbjYU2ZkPfA=
-			</data>
-		</dict>
 		<key>Headers/PLCmdPoooliGenerator.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qfDmf+u5vAvnLYDnY5S1Ul1+IuQ=
+			zZ++/jV3dznjaHIxhIpR4Dplj2c=
 			</data>
 			<key>hash2</key>
 			<data>
-			JssHiK6qcImXGqFxgrdGpEUaHOrXsH5Z8v6dlafz4bQ=
+			Yr8bFuAXam7vyEuTJCpM6bgVnyYyIAxDVez33A/zacQ=
 			</data>
 		</dict>
 		<key>Headers/PLCmdTSCGenerator.h</key>
@@ -186,22 +167,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EIc67ebUUKFBsrC0q6ZYL47y4gc=
+			9rVMAWTr81MdVPf2HvEfmTYy+v0=
 			</data>
 			<key>hash2</key>
 			<data>
-			qTv8bWvBLaFNSdi+GhPyD2PcuqrC0t+dogL2QY7whmE=
+			Vj9PdjrrmCeUplM9UP+F3P/o2IDn2wnNuGiFAeHBdlU=
 			</data>
 		</dict>
 		<key>Headers/PLDataDispatcher.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+bXzDT5F4cpk2HyFdmXjRRXHYy0=
+			JPAlymdpqB/qQ8GDFY3YfjcwrpY=
 			</data>
 			<key>hash2</key>
 			<data>
-			kkrpK7pMH1Qz8xjkZpxrX0RqfEEHcS2M0McR6aD0gWY=
+			htFDdNwQ+hw4wGkLmfJPQLvKCBWJbCRo1ycwkSD9vmg=
 			</data>
 		</dict>
 		<key>Headers/PLEncode.h</key>
@@ -237,26 +218,15 @@
 			ra1Hoi/pjQJTgJtq1W2v3tMN254cWdv8roRsPqaOakI=
 			</data>
 		</dict>
-		<key>Headers/PLMT800Resolver.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TtFNs9zqyWrJwj5yKb51N30a6ws=
-			</data>
-			<key>hash2</key>
-			<data>
-			iTdlyZBX4nJe5tkp+ZvB1JOmYcn+VYM1jIH+6Ew95aA=
-			</data>
-		</dict>
 		<key>Headers/PLPrinterSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Tfp7XE/EOzrLr+ub181SmHrQF5I=
+			sMU2uoDN3J03Rtwna30nxHqzZS0=
 			</data>
 			<key>hash2</key>
 			<data>
-			FS1382W2yuqM2L+Nuh0J9iCj7nabjU67R+lRw9SFQWs=
+			lVitu/bKIWuNPmFDr+R8+cHJB79OStStB87Ut4+ly2Q=
 			</data>
 		</dict>
 		<key>Headers/PLResolverCentral.h</key>

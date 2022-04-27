@@ -15,7 +15,7 @@ use_frameworks!
 target 'MyApp' do
   # your other pod
   # ...
-  pod 'PLPrinterSDK ','~> 0.1.2'
+  pod 'PLPrinterSDK ','~> 0.2.0'
 end
 ```
 

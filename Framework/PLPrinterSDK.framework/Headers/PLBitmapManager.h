@@ -9,13 +9,6 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-/// MT800位图模型
-@interface PLMT800BitmapSlice : NSObject
-
-@property (nonatomic, assign) uint16_t serial;
-@property (nonatomic, strong) NSData *data;
-
-@end
 
 /// Poooli位图模型
 @interface PLBitmapSlice : NSObject
@@ -39,8 +32,6 @@ typedef NS_ENUM(NSInteger, PLBitmapMode) {
     PLBitmapModeDithering = 1,
     /// 聚集抖动
     PLBitmapModeCluster = 2,
-    /// 灰阶算法
-    PLBitmapModeGray = 3
 };
 
 @interface PLBitmapManager : NSObject
@@ -52,15 +43,6 @@ typedef NS_ENUM(NSInteger, PLBitmapMode) {
 /// @param compress 压缩模式
 /// @param package 是否需要分包，一般都需要分包
 + (NSData *)generateGenralDataWithImage:(UIImage *)image watermark:(BOOL)watermark mode:(PLBitmapMode)mode compress:(PLBitmapCompressMode)compress package:(BOOL)package;
-
-
-/// 灰阶高清数据，PLCmdPoooliGenerator再调用appendGrayHDImageBitmap
-/// @param image 图片，图片高度不能超过5000
-/// @param watermark 是否需要增加水印
-/// @param gamma 伽码系数，调节明暗度
-/// @param factor 锐化程度，默认14，取值1-20，值越大锐化程度越低
-/// @param gammaType 是否需要调节伽马系数，YES表示需要，NO表示不需要，200dpi的机型建议选择NO
-+ (NSData *)generateHDDataWithImage:(UIImage *)image watermark:(BOOL)watermark fGamma:(CGFloat)gamma factor:(NSInteger)factor gammaType:(BOOL)gammaType;
 
 
 /// 预览图

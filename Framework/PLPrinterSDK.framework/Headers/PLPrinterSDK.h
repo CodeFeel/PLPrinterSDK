@@ -20,13 +20,10 @@ FOUNDATION_EXPORT const unsigned char PLPrinterSDKVersionString[];
 #import <PLPrinterSDK/PLLanguageConfig.h>
 
 #import <PLPrinterSDK/PLResolverCentral.h>
-#import <PLPrinterSDK/PLMT800Resolver.h>
 
 #import <PLPrinterSDK/PLBitmapManager.h>
 
 #import <PLPrinterSDK/PLCmdPoooliGenerator.h>
-#import <PLPrinterSDK/PLCmdMTGenerator.h>
-#import <PLPrinterSDK/PLCmdBBJGenerator.h>
 #import <PLPrinterSDK/PLCmdUniGenerator.h>
 #import <PLPrinterSDK/PLCmdCPCLGenerator.h>
 #import <PLPrinterSDK/PLCmdESCGenerator.h>
@@ -36,3 +33,4 @@ FOUNDATION_EXPORT const unsigned char PLPrinterSDKVersionString[];
 #import <PLPrinterSDK/PLEncode.h>
 #import <PLPrinterSDK/PLEnumList.h>
 
+#import <PLPrinterSDK/PLBarcodeEncodeVerify.h>

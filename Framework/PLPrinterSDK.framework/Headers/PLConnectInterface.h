@@ -14,8 +14,6 @@ typedef NS_ENUM(NSInteger, PLConnectMode) {
     PLConnectModeUnconnect  = 0,
     /// BLE
     PLConnectModeBLE        = 1,
-    /// MFI
-    PLConnectModeMFI        = 2,
 };
 
 typedef NS_ENUM(NSInteger, PLBluetoothState) {
@@ -31,15 +29,12 @@ typedef NS_ENUM(NSInteger, PLBluetoothState) {
 /// 连接错误类型
 typedef NS_ENUM(NSUInteger,PLConnectError){
     PLConnectErrorTimeout = 0,
-    PLConnectErrorNoAccessory,
     PLConnectErrorNoPeripheral,
     PLConnectErrorValidateTimeout,
     PLConnectErrorUnknownDevice,
     PLConnectErrorSystemFailed,
     PLConnectErrorValidateFailed,
     PLConnectErrorCodeCheckFailed,
-    PLConnectErrorSocketError,
-    PLConnectErrorSocketTimeout,
 };
 
 typedef void(^PLAccessoryPickerCompletion)(NSError *error);
@@ -51,7 +46,6 @@ typedef void(^PLAccessoryPickerCompletion)(NSError *error);
 @property (nonatomic, copy) NSString        *mac;           ///< mfi和ble的可能不一样
 @property (nonatomic, copy) NSString        *identifier;    ///< 外设的唯一标识符
 @property (nonatomic, strong) NSNumber      *distance;      ///< 距离
-@property (nonatomic, strong) EAAccessory   *accessory;     ///< mfi连接对象
 @property (nonatomic, strong) CBPeripheral  *peripheral;    ///< ble连接对象
 @property (nonatomic, assign) PLConnectMode  mode;          ///< 连接类型
 
@@ -64,9 +58,6 @@ typedef void(^PLAccessoryPickerCompletion)(NSError *error);
 /** BLE:发现附近蓝牙设备 */
 - (void)didDiscoverBLEPrints:(NSArray<PLPrinterMessage *> *)devices;
 
-/** MFI:发现附近配件 */
-- (void)didDiscoverMFIPrints:(NSArray<PLPrinterMessage *> *)devices;
-
 /** 连接失败 */
 - (void)didConnectFail:(NSError *)error;
 
@@ -76,12 +67,6 @@ typedef void(^PLAccessoryPickerCompletion)(NSError *error);
 /** 断开连接 */
 - (void)didDisconnect:(BOOL)active;
 
-/** 监听系统设置有配件连接，注册mfi通知后才会回调 */
-- (void)observerAccessoryDidConnectedNotification:(PLPrinterMessage *)device;
-
-/** 监听系统设置有配件断开，注册mfi通知后才会回调 */
-- (void)observerAccessoryDidDisconnectNotification:(PLPrinterMessage *)device;
-
 @end
 
 @interface PLConnectInterface : NSObject
@@ -89,16 +74,13 @@ typedef void(^PLAccessoryPickerCompletion)(NSError *error);
 @property (nonatomic, weak) id<PLPrinterInterfaceDelegate>  delegate;           ///< 协议
 @property (nonatomic, assign) BOOL                          isConnected;        ///< 是否连接
 @property (nonatomic, strong) PLPrinterMessage              *deviceConnected;   ///< 是否连接，连接后对象不为nil
-@property (nonatomic, assign) PLConnectMode                 mode;               ///< 连接方式 ble还是mfi
+@property (nonatomic, assign) PLConnectMode                 mode;               ///< 连接方式
 
 /** 单例对象 */
 + (PLConnectInterface *)shared;
 
 /** 开启扫描 ble */
 - (void)scanBluetooth;
-
-/** 开启扫描 mfi */
-- (void)scanAccessory;
 
 /** 停止扫描，连接成功会自动停止扫描 */
 - (void)stopScanBluetooth;
@@ -114,16 +96,9 @@ typedef void(^PLAccessoryPickerCompletion)(NSError *error);
 /** 断开打印机 */
 - (void)disconnect;
 
+- (void)cancelConnect;
+
 /** 获取手机的蓝牙状态 */
 - (PLBluetoothState)getBluetoothStatus;
-
-/** 注册MFI通知 */
-- (void)registerEAAccessoryManagerNotifications;
-
-/** 移除MFI通知 */
-- (void)removeEAAccessoryManagerNotifications;
-
-/** 展示可连接的配件列表，该方法会弹出连接窗口 */
-- (void)showBluetoothAccessorys:(NSString *)name completion:(PLAccessoryPickerCompletion)completion;
 
 @end

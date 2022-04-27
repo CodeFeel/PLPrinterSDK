@@ -49,3 +49,4 @@ Privacy - Bluetooth Peripheral Usage Description
 请查看Example的文档说明
 ```
 
+支持任何机型

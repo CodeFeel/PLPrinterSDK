@@ -214,7 +214,7 @@ typedef NS_ENUM(NSUInteger, PTTSCBitmapMode) {
  *  设置打印浓度.
  *
  *  @brief 设置打印浓度
- *  @param density     打印浓度
+ *  @param density     打印浓度 0~15
  *
  *  \~english
  *

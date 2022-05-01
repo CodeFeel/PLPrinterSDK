@@ -25,10 +25,7 @@ FOUNDATION_EXPORT const unsigned char PLPrinterSDKVersionString[];
 
 #import <PLPrinterSDK/PLCmdPoooliGenerator.h>
 #import <PLPrinterSDK/PLCmdUniGenerator.h>
-#import <PLPrinterSDK/PLCmdCPCLGenerator.h>
-#import <PLPrinterSDK/PLCmdESCGenerator.h>
 #import <PLPrinterSDK/PLCmdTSCGenerator.h>
-#import <PLPrinterSDK/PLCmdZPLGenerator.h>
 
 #import <PLPrinterSDK/PLEncode.h>
 #import <PLPrinterSDK/PLEnumList.h>

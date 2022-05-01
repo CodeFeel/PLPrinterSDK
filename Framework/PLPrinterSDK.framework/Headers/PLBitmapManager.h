@@ -10,7 +10,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// Poooli位图模型
 @interface PLBitmapSlice : NSObject
 
 @property (nonatomic, assign) uint16_t serial; ///< 包序号
